@@ -198,8 +198,12 @@ $(document).ready(function () {
       var avgLat=0;
       var sumLong=0;	
       var avgLong=0;
-      console.log("aaaaaaaa :"+JSON.stringify(data.mapComponents.mapTabData[1].markers));
+//       console.log("aaaaaaaa :"+JSON.stringify(data.mapComponents.mapTabData[1].markers));
       for (var i = 0, len = data.mapComponents.mapTabData.length; i < len; i++) {
+       sumLat=0;	
+       avgLat=0;
+       sumLong=0;	
+       avgLong=0;
         
         var x = data.mapComponents.mapTabData[i];
 		
@@ -212,18 +216,25 @@ $(document).ready(function () {
            
            
            /* Longtitudes */
-           var Long=x.markers[j].lat;
+           var Long=x.markers[j].long;
            	var Longtitude=parseFloat(Long);
             console.log("Long :"+Long);
             sumLong+=Longtitude;
       	}       
         
         /*..........................................................................*/
+        avgLat=sumLat/x.markers.length;
+        avgLong=sumLong/x.markers.length;
+        console.log("%%%%%% Average of Latitudes :"+avgLat);
+        console.log("%%%%%% Sum of Latitudes :"+sumLat);
+        console.log("%%%%%% Average of Longtitudes :"+avgLong);
+        console.log("%%%%%% Sum of Longtitudes :"+sumLong);
         
-        console.log(data.mapComponents.mapTabData.markers[1].length);
+        console.log(data.mapComponents.mapTabData[0].markers.length);
             let map = L.map(x.mapID, {
                 attributionControl: false,
-                center: [7.8742, 80.6511],
+//                 center: [7.8742, 80.6511],
+              center:[avgLat,avgLong],
                 minZoom: 2,
                 zoom: 7,
             })
@@ -244,23 +255,19 @@ $(document).ready(function () {
 			// ..............................................................................
             var markers = [];        			
             for (var j = 0; j < x.markers.length; ++j) {
-              	L.marker([x.markers[j].lat, x.markers[j].long], { icon: myIcon }).addTo(map);
+              	L.marker([x.markers[j].lat, x.markers[j].long], { icon: myIcon }).bindPopup('This is Littleton, CO.').addTo(map);
             }
-        	        	       	        
+        	    
+        
         }
       
       	
 
         document.getElementById('button0').click(); // this is needed to make the tabs work properly
 		
-      	avgLat=sumLat/x.markers.length;
-        avgLong=sumLong/x.markers.length;
-        console.log("%%%%%% Average of Latitudes :"+avgLat);
-        console.log("%%%%%% Sum of Latitudes :"+sumLat);
-        console.log("%%%%%% Average of Longtitudes :"+avgLong);
-        console.log("%%%%%% Sum of Longtitudes :"+sumLong);
+      	console.log("::::::::::::::::::::"+JSON.stringify(data.mapComponents.mapTabData));
         
-        console.log("%%%%%% length :"+data.mapComponents.mapTabData.length);
+//         console.log("%%%%%% length :"+data.mapComponents.mapTabData.length);
       
     }).fail(function (jqXHR, textStatus, errorThrown) {
         console.log("error in ajax request");
