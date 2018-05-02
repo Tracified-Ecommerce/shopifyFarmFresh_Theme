@@ -1,0 +1,154 @@
+/* begin tracified-POS-section.css*/
+
+/* map section */
+#mapWrapper{
+	color: white;
+    padding: 0%;
+    border: 2px solid #c5c4c6;
+}
+
+#mapTabContainer{
+	padding: 2%;
+}
+
+/* Other POS view */
+.mock-shift-left{
+	margin-left: -98%;
+  }
+
+.modalTitle{
+  font-weight: bold;
+  color: black;
+  font-size: 150%;
+  padding-bottom: 20px !important;
+  font-family: Helvetica Neue",Helvetica,Arial,sans-serif ;
+}
+
+.mandotoryTxt{
+  color: gray;
+  padding-bottom: 20px !important;
+  font-family: Helvetica Neue",Helvetica,Arial,sans-serif ;
+}
+
+td{
+  border: none;
+}
+
+.tblDimensions .dimensionContent td{
+  padding : 3px;
+  font-size: 12px;
+  width:30%;
+}
+.tblDimensions{
+  height: 100%;
+  width: 100%;
+  // margin-top: 20%;
+/*   border: none !important; */
+/*   margin-bottom: 70% !important; */
+}
+
+#mapContainer{
+  // margin-top: 64px !important;
+}
+
+.dimTitle{
+  height: 25%;
+  width: 10% !important;
+  font-size: 120% !important;
+  font-weight: bold;
+  padding-left: 2%;
+}
+
+.descript{
+  padding-left: 2%;
+  padding-right: 2%;
+  font-size: 80% !important;
+}
+
+.keyTitle{
+  margin-top: 40% !important;
+  font-weight: bold;
+/*   width: 35% !important; */
+}
+
+.dimensionContent td {
+  width: 50%;
+  font-size: 80%;
+  font-family: Helvetica Neue",Helvetica,Arial,sans-serif ;
+}
+
+/* Media queries for the PC devices */
+
+@media (min-width: 1024px) {
+  .mandotoryTxt{
+    line-height: 32px;
+    text-align: right;
+  }
+  .second-section{
+    margin-top: 30px;
+    margin-bottom: 15px;
+  }
+  #dimensionName{
+    padding-bottom: 15px; 
+  }
+  #map0{
+    height: 410px ! important;
+  }
+  
+  .mock-shift-left{
+	margin-left: -109%; !important
+  }
+
+}
+
+
+/* Media queries for the tablet devices */
+
+@media (min-width: 650px) and (max-width: 1023px) {
+
+  .second-section{
+    margin-top: 30px;
+  }
+  .map-section{
+    margin-bottom: 15px; 
+  }
+  #dimensionName{
+    margin-bottom: 15px; 
+  }
+
+}
+
+/* Media queries for the mobile devices */
+
+@media  (min-width: 360px) and (max-width: 640px) {
+  .modalTitle{
+    padding-bottom: 10px !important;
+  }
+  .tracified-container{
+   	margin: 0px; 
+  }
+  .summary-widget{
+    margin-bottom: 15px;
+  }
+  .subtitleDiv {
+  	font-size: 16px;
+  }
+  canvas {
+	margin-top: 25px;
+    margin-bottom: 20px;
+  }
+  .second-section{
+    margin-top: 20px;
+  }
+  #dimensionName{
+    margin-bottom: 15px;
+    padding-left: 0;
+    padding-right: 0;
+  }
+  .map-section{
+    margin-bottom: 25px; 
+  }
+
+}
+
+/* end tracified-POS-section.css*/

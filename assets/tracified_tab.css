@@ -1,0 +1,94 @@
+/* begin tracified_tab.css */
+/* Style the tab */
+.tab {
+    overflow: hidden;
+    background-color: #ffffff;
+    color: #000000;
+    
+}
+
+/* Style the buttons inside the tab */
+.tab button {
+    float: left;
+    background-color: #f2f2f2;
+    border: 0px solid #a0a0a0;
+	border-bottom: 2px solid #c5c4c6;
+    cursor: pointer;
+    transition: 0.3s;
+    font-size: 12px ! important;
+    font: #000000;
+    width: 50%!important;
+    height: 30px !important;
+/*   	font-size: 100%; */
+}
+
+.tab button:nth-child(1){
+	border-right: 2px solid #c5c4c6;
+}
+
+/* Create an active/current tablink class */
+.tab button.active {
+    color: #227f55;
+  	background-color:white !important;
+ 	border-bottom: 0px solid #c5c4c6 ! important;
+    height: 30px !important;
+    font-weight: 700;
+}
+
+
+/* Media queries for the tablet devices */
+@media (min-width: 650px) and (max-width: 1023px) {
+      .tab button {
+          float: left;
+          outline: none;
+          cursor: pointer;
+          transition: 0.3s;
+/*           font-size: 120%; */
+          font:#000000;
+          width:50%!important;
+          height: 30px !important;
+          border-bottom: 2px solid #c5c4c6;
+      }
+
+    .tab button:nth-child(1){
+      border-right: 2px solid #c5c4c6;
+  }
+
+    .tab button.active {
+      color: #227f55;
+      background-color:white !important;
+       border-bottom: 0px solid #c5c4c6 ! important;
+      height: 30px !important;
+      font-weight: 700;
+  }
+
+}
+
+/* Media queries for the mobile devices */
+
+@media  (min-width: 360px) and (max-width: 640px) {
+	.tab button {
+          float: left;
+          outline: none;
+          cursor: pointer;
+          transition: 0.3s;
+/*           font-size: 120%; */
+          font:#000000;
+          width:50%!important;
+          height: 30px !important;
+          border-bottom: 2px solid #c5c4c6;
+      }
+
+    .tab button:nth-child(1){
+      border-right: 2px solid #c5c4c6;
+  }
+
+    .tab button.active {
+      color: #227f55;
+      background-color:white !important;
+       border-bottom: 0px solid #c5c4c6 ! important;
+      height: 30px !important;
+      font-weight: 700;
+  }
+}
+/* end tracified_tab.css */

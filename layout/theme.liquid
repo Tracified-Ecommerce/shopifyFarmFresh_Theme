@@ -1,0 +1,165 @@
+<!doctype html>
+<!--[if IE 9]> <html class="ie9 no-js" lang="{{ shop.locale }}"> <![endif]-->
+<!--[if (gt IE 9)|!(IE)]><!--> <html class="no-js" lang="{{ shop.locale }}"> <!--<![endif]-->
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <meta name="theme-color" content="{{ settings.color_button }}">
+  <link rel="canonical" href="{{ canonical_url }}">
+
+  {% if settings.favicon != blank %}
+    <link rel="shortcut icon" href="{{ settings.favicon | img_url: '32x32' }}" type="image/png">
+  {% endif %}
+
+  {% capture seo_title %}
+    {{ page_title }}
+    {% if current_tags %}
+      {%- assign meta_tags = current_tags | join: ', ' %} &ndash; {{ 'general.meta.tags' | t: tags: meta_tags -}}
+    {% endif %}
+    {% if current_page != 1 %}
+      &ndash; {{ 'general.meta.page' | t: page: current_page }}
+    {% endif %}
+    {% unless page_title contains shop.name %}
+      &ndash; {{ shop.name }}
+    {% endunless %}
+  {% endcapture %}
+  <title>{{ seo_title }}</title>
+
+  {% if page_description %}
+    <meta name="description" content="{{ page_description | escape }}">
+  {% endif %}
+
+  {% include 'social-meta-tags' %}
+
+  {{ 'theme.scss.css' | asset_url | stylesheet_tag }}
+  {{ 'mycss.css' | asset_url | stylesheet_tag }}
+  {{ 'mdb.css' | asset_url | stylesheet_tag }}
+  {{ 'mdb.min.css' | asset_url | stylesheet_tag }}
+  {{ 'style.css' | asset_url | stylesheet_tag }}  
+  {{ 'bootstrap.css' | asset_url | stylesheet_tag }}
+  {{ 'bootstrap.min.css' | asset_url | stylesheet_tag }}
+  {{ 'bootstrap-theme.css' | asset_url | stylesheet_tag }}
+  {{ 'bootstrap-theme.min.css' | asset_url | stylesheet_tag }}
+  
+  {{ 'mdb.scss' | asset_url | stylesheet_tag }}
+  {{ '_animations.scss' | asset_url | stylesheet_tag }}
+  {{ '_badge.scss' | asset_url | stylesheet_tag }}
+  {{ '_breadcrumb.scss' | asset_url | stylesheet_tag }}
+  {{ '_buttons.scss' | asset_url | stylesheet_tag }}
+  {{ '_cards-basic.scss' | asset_url | stylesheet_tag }}
+  {{ '_carousel-basic.scss' | asset_url | stylesheet_tag }}
+  {{ '_collapse.scss' | asset_url | stylesheet_tag }}
+  {{ '_deprecated.scss' | asset_url | stylesheet_tag }}
+  {{ '_dropdowns.scss' | asset_url | stylesheet_tag }}
+  {{ '_footer.scss' | asset_url | stylesheet_tag }}
+  {{ '_forms-basic.scss' | asset_url | stylesheet_tag }}
+  {{ '_global.scss' | asset_url | stylesheet_tag }}
+  {{ '_helpers.scss' | asset_url | stylesheet_tag }}
+  {{ '_jumbotron.scss' | asset_url | stylesheet_tag }}
+  {{ '_list-group.scss' | asset_url | stylesheet_tag }}
+  {{ '_masks.scss' | asset_url | stylesheet_tag }}
+  {{ '_modals.scss' | asset_url | stylesheet_tag }}
+  {{ '_msc.scss' | asset_url | stylesheet_tag }}
+  {{ '_navbar.scss' | asset_url | stylesheet_tag }}
+  {{ '_progress.scss' | asset_url | stylesheet_tag }}
+  {{ '_tables.scss' | asset_url | stylesheet_tag }}
+  {{ '_typography.scss' | asset_url | stylesheet_tag }}
+  {{ '_waves.scss' | asset_url | stylesheet_tag }}
+  
+  
+  {{ '_colors.scss' | asset_url | stylesheet_tag }}
+  {{ '_functions.scss' | asset_url | stylesheet_tag }}
+  {{ '_mixins.scss' | asset_url | stylesheet_tag }}
+  {{ '_prefixer.scss' | asset_url | stylesheet_tag }}
+  {{ '_variables.scss' | asset_url | stylesheet_tag }}
+  {{ '_variables-b4.scss' | asset_url | stylesheet_tag }}
+  {% include 'google-fonts' %}
+  
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+
+  <script>
+    var theme = {
+      strings: {
+        addToCart: {{ 'products.product.add_to_cart' | t | json }},
+        soldOut: {{ 'products.product.sold_out' | t | json }},
+        unavailable: {{ 'products.product.unavailable' | t | json }},
+        showMore: {{ 'general.filters.show_more' | t | json }},
+        showLess: {{ 'general.filters.show_less' | t | json }}
+      },
+      moneyFormat: {{ shop.money_format | json }}
+    }
+
+    document.documentElement.className = document.documentElement.className.replace('no-js', 'js');
+  </script>
+
+  <!--[if (lte IE 9) ]>{{ 'match-media.min.js' | asset_url | script_tag }}<![endif]-->
+
+  {% if template.directory == 'customers' %}
+    <!--[if (gt IE 9)|!(IE)]><!--><script src="{{ 'shopify_common.js' | shopify_asset_url }}" defer="defer"></script><!--<![endif]-->
+    <!--[if lte IE 9]><script src="{{ 'shopify_common.js' | shopify_asset_url }}"></script><![endif]-->
+  {% endif %}
+
+  <!--[if (gt IE 9)|!(IE)]><!--><script src="{{ 'vendor.js' | asset_url }}" defer="defer"></script><!--<![endif]-->
+  <!--[if lte IE 9]><script src="{{ 'vendor.js' | asset_url }}"></script><![endif]-->
+
+  <!--[if (gt IE 9)|!(IE)]><!--><script src="{{ 'theme.js' | asset_url }}" defer="defer"></script><!--<![endif]-->
+  <!--[if lte IE 9]><script src="{{ 'theme.js' | asset_url }}"></script><![endif]-->
+  
+  {{ 'tracified.js' | asset_url | script_tag }}
+  {{ 'bootstrap.js' | asset_url | script_tag }}
+  {{ 'bootstrap.min.js' | asset_url | script_tag }}
+  {{ 'npm.js' | asset_url | script_tag }}
+  
+  {{ 'jquery-3.1.1.js' | asset_url | script_tag }}
+  {{ 'jquery-3.1.1.min.js' | asset_url | script_tag }}
+  {{ 'mdb.js' | asset_url | script_tag }}
+  {{ 'mdb.min.js' | asset_url | script_tag }}
+  {{ 'popper.min.js' | asset_url | script_tag }}
+  
+
+  {{ content_for_header }}
+  
+  
+  {{ '//code.jquery.com/ui/1.9.2/themes/base/jquery-ui.css' | stylesheet_tag }}
+     <script src="//ajax.googleapis.com/ajax/libs/jqueryui/1.9.2/jquery-ui.min.js" type="text/javascript" defer="defer"></script>
+  
+</head>
+
+<body class="template-{{ template | split: '.' | first }}">
+
+  <a class="in-page-link visually-hidden skip-link" href="#MainContent">{{ 'general.accessibility.skip_to_content' | t }}</a>
+
+  <div id="SearchDrawer" class="search-bar drawer drawer--top">
+    <div class="search-bar__table">
+      <div class="search-bar__table-cell search-bar__form-wrapper">
+        <form class="search search-bar__form" action="/search" method="get" role="search">
+          <button class="search-bar__submit search__submit btn--link" type="submit">
+            {% include 'icon-search' %}
+            <span class="icon__fallback-text">{{ 'general.search.submit' | t }}</span>
+          </button>
+          <input class="search__input search-bar__input" type="search" name="q" value="{{ search.terms | escape }}" placeholder="{{ 'general.search.placeholder' | t }}" aria-label="{{ 'general.search.placeholder' | t }}">
+        </form>
+      </div>
+      <div class="search-bar__table-cell text-right">
+        <button type="button" class="btn--link search-bar__close js-drawer-close">
+          {% include 'icon-close' %}
+          <span class="icon__fallback-text">{{ 'general.search.close' | t }}</span>
+        </button>
+      </div>
+    </div>
+  </div>
+
+  {% section 'header' %}
+
+  <div class="page-container" id="PageContainer">
+
+    <main class="main-content" id="MainContent" role="main">
+      {{ content_for_layout }}
+    </main>
+
+    {% section 'footer' %}
+
+  </div>
+</body>
+</html>

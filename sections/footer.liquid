@@ -1,0 +1,70 @@
+{%- assign social_icons = false -%}
+
+{% if
+  settings.social_twitter_link != blank
+  or settings.social_facebook_link != blank
+  or settings.social_pinterest_link != blank
+  or settings.social_instagram_link != blank
+  or settings.social_tumblr_link != blank
+  or settings.social_snapchat_link != blank
+  or settings.social_youtube_link != blank
+  or settings.social_vimeo_link != blank
+  or template.name == 'article'
+  or template.name == 'blog'
+%}
+  {%- assign social_icons = false -%}
+{% endif %}
+
+<footer class="site-footer" role="contentinfo" style="background-color: darkgrey;">
+    	<div class="sub-footer">
+			<div class="footer-container">
+              	<br/><br/>
+				<div class="row-footer">
+						<ul class="pull-right">
+                          <li><h4><a href="https://99xnsbm.myshopify.com/">Home</a></h4></li>
+							<li><h4><a href="https://99xnsbm.myshopify.com/collections/all">Shop</a></h4></li>
+							<li><h4><a href="https://99xnsbm.myshopify.com/pages/contact-us">Contact us</a></h4></li>
+							<li><h4><a href="https://99xnsbm.myshopify.com/pages/about-us">About us</a></h4></li>
+						</ul>
+                      <br><br>
+              	</div>
+              
+              	<br/><br/><br/><br/>
+                <div class="row-footer" style="padding-left:35%;text-align:center;">
+                      <h4>&copy; 2018 Shopify.All Rights Reserved.</h4>
+				</div>
+			</div>
+		</div>bugs 
+</footer>
+
+{% schema %}
+  {
+    "name": "Footer",
+    "settings": [
+      {
+        "type": "link_list",
+        "id": "footer_linklist",
+        "label": "Primary menu",
+        "default": "footer"
+      },
+      {
+        "type": "link_list",
+        "id": "footer_linklist_two",
+        "label": "Additional menu",
+        "default": "main-menu"
+      },
+      {
+        "type": "checkbox",
+        "id": "footer_newsletter_enable",
+        "label": "Show newsletter signup",
+        "default": false
+      },
+      {
+        "type": "checkbox",
+        "id": "show_payment_icons",
+        "label": "Show payment icons",
+        "default": false
+      }
+    ]
+  }
+{% endschema %}

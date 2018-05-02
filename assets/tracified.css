@@ -1,0 +1,116 @@
+/** begin tracified.css */
+
+canvas {
+	margin-left: auto !important;
+  	margin-right: auto !important;
+  	margin-bottom: 5px;
+}
+
+.row {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display:         flex;
+  flex-wrap: wrap;
+}
+.row > [class*='col-'] {
+  display: flex;
+  flex-direction: column;
+}
+
+.logoImg{
+	width: 180px !important;
+    margin-top: 2%;
+    z-index: 20;
+    position: relative;
+  	top: 100px;
+    margin-left: 90%;
+}
+
+.tracified-container{
+	padding: 15px;
+  	margin: 30px;
+  	border: solid #8E8E8E 3px;
+  	border-radius: 20px;
+}
+
+.large-green {
+  	padding-top: 10px;
+  	// padding-bottom: 8px;
+	color:green;
+  	font-size: 480%;
+  	text-align: center;
+  	height: 105px;
+}
+
+.titleDiv {
+	font-size: 17px;
+  	font-weight: bold;
+  	text-align: center;
+}
+
+.subtitleDiv {
+  	text-align: center;
+  	font-size: 14px;
+}
+
+.xoutofy-top {
+  	padding-top: 10px;
+    color:green;
+    font-size: 480%;
+    text-align: center;
+  	height: 105px;
+    // margin-bottom: -5%;
+}
+
+.xoutofy-middle {
+    color: green;
+    font-size: 17px;
+    font-style: italic;
+    text-align: center;
+    font-weight: bold;
+}
+
+.loading-container {
+  	width:100%;
+  	display: flex;
+  	flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.loading-spinner {
+    border: 6px solid #E6E6E6; /* Light grey */
+    border-top: 6px solid #1abc9c; /* Blue-green */
+    border-radius: 50%;
+    width: 50px;
+    height: 50px;
+    animation: spin 1s linear infinite;
+}
+
+@keyframes spin {
+    0% { transform: rotate(0deg); }
+    100% { transform: rotate(360deg); }
+}
+
+.component-grid {
+  position: relative;
+  animation-name: fadeIn;
+  animation-duration: 1.5s;
+  display: flex;
+}
+
+.component-grid .componentChild {
+  flex:1;
+  width: 150px;
+  background: #e0ddd5;
+  color: #171e42;
+  padding: 10px;
+}
+
+@keyframes fadeIn { 
+  from{ opacity:0 } 
+  to{ opacity:1 }
+}
+
+/** end tracified.css */

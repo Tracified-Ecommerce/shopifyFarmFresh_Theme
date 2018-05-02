@@ -1,0 +1,75 @@
+<!-- begin tracified.liquid -->
+
+{{ 'tracified_bootstrap.min.css' | asset_url | stylesheet_tag }}
+{{ 'tracified.css' | asset_url | stylesheet_tag }}
+{{ 'tracified-imageSlider.css' | asset_url | stylesheet_tag }}
+{{ 'tracified_leaflet.css' | asset_url | stylesheet_tag }}
+{{ 'tracified_tab.css' | asset_url | stylesheet_tag }}
+
+{% assign shopName = shop.permanent_domain %}
+{% assign productName = product.id %}
+
+{%comment%}Tracified logo {%endcomment%}
+<!-- <div class="logoImg">
+	{{ 'tracified-logo.png' | asset_url | img_tag }}
+</div> -->
+<div class="tracified-container">
+  
+    <p id="hiddenShop" hidden>{{shopName}}</p>
+    <p id="hiddenItem" hidden>{{productName}}</p>
+  	<p id="pinIcon" hidden>{{'pin48.png' | asset_url }}</p>
+    <p id="pinIconSmall" hidden>{{'pin24.png' | asset_url }}</p>
+  	<div id="loader" class="loading-container">
+    	<div class="loading-spinner">
+      	</div>
+      	<br>
+      	<p>Loading traceability data...<p>
+	</div>
+  	<div id="traceError" style="display:none;" class="loading-container">
+<!--       <p>Sorry! Tracified has encountered an error. Please try refreshing the page<p> -->
+	</div>
+  	<div id="noTrace" style="display:none;">
+      	<p> -Traceability data is not available for this product<p>
+	</div>
+  
+  	
+  
+  	<div style="display:none;" id="myDiv" class="component-grid">
+      
+      <div class="row">
+        <div class="col-xs-12 col-sm-6">
+          <p class="modalTitle">Trace your product more : </p>
+        </div>
+        <div class="col-xs-12 col-sm-6">
+          <p class="mandotoryTxt">*The following statistics are calculated from the current stock</p>
+        </div>
+      </div>
+      
+      <div class="container-fluid" style="margin-bottom:20px">
+        <div id="columnContainer" class="row">
+        </div>  
+      </div>
+      <div class="container-fluid">
+          {%include 'tracified-pos'%}
+      </div>
+      <div class="container-fluid">
+           {%include 'tracified-imageSlider'%}
+      </div>
+     
+      
+	</div>
+  	 
+  
+  
+</div>
+
+<div id="mapid"></div>
+
+
+{{ 'tracified_jquery.min.js' | asset_url | script_tag }}
+{{ 'tracified_leaflets.js' | asset_url | script_tag }}
+{{ 'tracified_tab.js' | asset_url | script_tag }}
+{{ 'tracified.js' | asset_url | script_tag }}
+
+
+<!-- end tracified.liquid -->

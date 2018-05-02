@@ -1,0 +1,8 @@
+<!-- Oreder Details Snippet -->
+
+<h4>Additional details</h4>
+<p>
+  {% for attribute in attributes %}
+  {{ attribute | first }}: {{ attribute | last }}<br>
+  {% endfor %}
+</p>

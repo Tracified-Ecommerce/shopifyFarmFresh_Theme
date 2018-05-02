@@ -1,0 +1,506 @@
+/* .list--inline.pagination{
+    width: 20%;
+    position: relative;
+} */
+
+.btn.btn--secondary.btn--narrow.btn--disabled,.btn.btn--secondary.btn--narrow{
+    background-color: #7b7d7d;
+}
+
+/* .btn.btn--secondary.btn--narrow.btn--disabled{
+    margin-left: -75%;
+    margin-top: -10%;
+}
+
+.btn.btn--secondary.btn--narrow{
+    margin-top: -12%;
+    margin-left: 70%
+}
+
+.pagination__text{
+    margin-top: -15%;
+    margin-left: -25% !important;
+} */
+
+.pagination__text{
+  max-inline-size: 100%;
+    margin-top: -15%;
+    margin-left: -20% !important;
+  	
+}
+#SortTags,#SortBy{
+    color: white !important;
+}
+
+option{
+   color: white !important;
+  float: left;
+}
+
+.row-footer{
+	text-align:center;
+}
+
+.sub-footer {
+ margin-right: 25%;
+}
+
+.sub-footer h4{
+  color: white !important; 
+}
+
+.sub-footer a {
+	color: white !important;
+   margin-right:50px;
+}
+
+.center-col {
+  margin-left:  50%;
+}
+
+.sub-footer ul {
+	list-style: none;
+	padding: 0;
+	margin: 0;
+  	color: white !important;
+}
+
+.sub-footer ul > li {
+  display: inline-block;
+  color: white !important;
+  margin-right:50px;
+}
+#harvest_dt,#Harvested_date{
+    display: inline-block;
+    position: absolute;
+}
+
+#harvest_dt{
+    margin-left: 15%;
+    margin-top: -0.1%;
+    font-weight: bold;
+    color:#007E33;
+}
+
+#warehouse_data{
+    margin-top: 3%;
+}
+
+/* .card-text{
+    width: 100%;
+    margin-left: -10%;
+}
+#temp_avg,.card-text{
+    display: inline-block;
+    position: absolute;
+}
+
+#temp_avg{
+    padding-left: 70%;
+}
+ */
+.list-view-item__title a,.cart__meta-text,.cart-flex-item,.small--hide ,.cart__qty{
+    font-size: 14px;
+}
+.contact-form label,#infor,#logo_topic{
+    font-weight: bold;
+}
+.site-nav__link:hover{
+    text-decoration: none;
+    color: #cfd8dc; 
+}
+.site-nav__link {  
+/*     width: 200%; */
+    font-size: 12%; 
+    margin-bottom: -0%;
+}
+.section-header h2{
+    font-weight: bold;
+}
+.hr--invisible{
+    display: none;
+}
+
+.grid-view-item__title{
+    text-align: center;
+}
+.grid-view-item__meta{
+    text-align: center;
+}
+.header--logo--img{
+/*     padding-top: -40%; */
+    padding-bottom: 15%;
+}
+.site-header__cart{
+    color: white !important;
+}
+#newsletter_description{
+    margin-left: -6%;
+    font-size: 90%;
+    color:  white ;
+}
+.contact-form{
+   display: inline-block;
+    position: absolute;
+    width: 65%;
+    margin-left: 38%;
+    margin-top: -4.5%;
+    color:  white ;
+}
+
+#footer {
+  width: 150%;
+}
+
+
+
+
+
+        .quality{
+            margin-left: 35%;
+            color: black;
+            font-weight: bolder;
+        }
+        .quality_val{
+             color: black;            
+            font-weight: bolder;
+             margin-left: 10%;
+        }
+
+        .share-facebook,.share-twitter,.share-pinterest{
+            background-color: white;
+        }
+
+        .return-link, .btn{
+            background-color: #7b7d7d;
+        }
+
+        .share-facebook .share-title,.share-twitter .share-title,.share-pinterest .share-title{
+            color: black;
+        }
+
+        .progress {
+          height: 15px;
+          width:40%;
+          margin-left:20%;
+        }
+        .progress .skill .val {
+          float: right;
+          font-style: normal;
+          margin: 0 20px 0 0;
+        }
+
+        .progress-bar {
+          text-align: left;
+          transition-duration: 3s;
+        }
+
+        #progress_id{
+            display:inline-block;
+            position:absolute;
+            font-weight:bold;
+            color: black;
+        }
+
+        #Subscribe{
+            margin-left: -5%;
+            background-color:  #909497 ;
+        }
+
+        #product_description1,#product_description2{
+            color: black;
+        }
+
+        .site-footer{
+            height: 100px;
+            margin-top: 5%;
+            background-color: #333333 !important;   
+        	
+        }
+
+        #AddToCart-product-template{
+            background-color: black;
+        }
+
+        .product-single__title{
+            color: #008000 ;
+        }
+
+        #ProductPrice-product-template{
+            color: black;
+            font-weight: initial;    
+        }
+
+        .input-group{
+            width: 40%;  
+          margin-left: -5.5%;
+
+        }
+
+        .shopify-section{
+            margin-bottom:-4% ;
+        }
+
+        .site-footer__payment-icons{
+/*             margin-left: -4% !important;
+            width: 50%;
+            margin-top: 53% !important;
+           display: inline-block;
+            position: fixed;
+            color: black; */
+        }
+
+        .social-icons {
+            margin-left: 67%;
+/*             margin-top: 5%; */
+            display: inline-block;
+            position: absolute;
+            color:  white !important;
+        }
+
+        a{
+            color: black !important;
+            font-size: 90%;
+        }
+
+        .h4{
+            margin-left: -6%;
+            margin-top: -4%;
+        }
+	.site-footer__copyright--bottom a{
+            width: 40%;
+            font-size: 100%;
+            margin-top: 10%;
+            margin-left: 70%;
+/*             margin-right: 30%; */
+            color: white !important;
+        }
+
+	.site-footer__copyright-text a{
+            width: 40%;
+            font-size: 100%;
+            margin-top: 10%;
+            margin-left: 70%;
+/*             margin-right: 30%; */
+            color: white !important;
+        }
+      
+
+
+       /*Trace more button*/       
+         .trace img {
+            width: 20%;
+            margin-left: 80%;
+            margin-top: -97%;
+            position: relative;
+         }
+
+        #trace_more1{
+            margin-top: -10%;
+            margin-left: 17%;            
+            margin-bottom: 3%;
+        }
+
+        #trace_more{
+            width: 85%;
+        }{
+    font-size: 14px;
+}
+.contact-form label,#infor,#logo_topic{
+    font-weight: bold;
+}
+.site-nav__link:hover{
+    text-decoration: none;
+    color: #cfd8dc; 
+}
+.site-nav__link {  
+/*     width: 200%; */
+    font-size: 120%; 
+    margin-bottom: -0%;
+}
+.section-header h2{
+    font-weight: bold;
+}
+.hr--invisible{
+    display: none;
+}
+
+.grid-view-item__title{
+    text-align: center;
+}
+.grid-view-item__meta{
+    text-align: center;
+}
+.header--logo--img{
+/*     padding-top: -40%; */
+    padding-bottom: 15%;
+}
+.site-header__cart{
+    color: white !important;
+}
+#newsletter_description{
+    margin-left: -6%;
+    font-size: 90%;
+    color:  white ;
+}
+.contact-form{
+   display: inline-block;
+    position: absolute;
+    width: 65%;
+    margin-left: 38%;
+    margin-top: -4.5%;
+    color:  white ;
+}
+.logo{
+    width: 30%;
+    display: inline-block;
+    position: absolute;
+    padding-top: 1%; 
+}
+      
+		.quality{
+            margin-left: 35%;
+            color: black;
+            font-weight: bolder;
+        }
+        .quality_val{
+             color: black;            
+            font-weight: bolder;
+             margin-left: 10%;
+        }
+
+        .share-facebook,.share-twitter,.share-pinterest{
+            background-color: white;
+        }
+
+        .return-link, .btn{
+            background-color: #7b7d7d;
+        }
+
+        .share-facebook .share-title,.share-twitter .share-title,.share-pinterest .share-title{
+            color: black;
+        }
+
+        .progress {
+          height: 15px;
+          width:40%;
+          margin-left:20%;
+        }
+        .progress .skill .val {
+          float: right;
+          font-style: normal;
+          margin: 0 20px 0 0;
+        }
+
+        .progress-bar {
+          text-align: left;
+          transition-duration: 3s;
+        }
+
+        #progress_id{
+            display:inline-block;
+            position:absolute;
+            font-weight:bold;
+            color: black;
+        }
+
+        #Subscribe{
+            margin-left: -5%;
+            background-color:  #909497 ;
+        }
+
+        #product_description1,#product_description2{
+            color: black;
+        }
+
+        .site-footer{
+            height: 200px;
+            margin-top: 5%;
+            background-color: #333333 !important;
+        }
+
+        #AddToCart-product-template{
+            background-color: black;
+        }
+
+        .product-single__title{
+            color: #008000 ;
+        }
+
+        #ProductPrice-product-template{
+            color: black;
+            font-weight: initial;    
+        }
+
+        .input-group{
+            width: 40%;  
+          margin-left: -5.5%;
+
+        }
+
+        .shopify-section{
+            margin-bottom:-4% ;
+        }
+
+        .site-footer__payment-icons{
+/*             margin-left: -4% !important;
+            width: 50%;
+            margin-top: 53% !important;
+            display: inline-block;
+            position: fixed;
+            color: black; */
+        }
+
+        .social-icons {
+            margin-left: 67%;
+            display: inline-block;
+            position: absolute;
+            color:  white !important;
+        }
+
+        a{
+            color: black !important;
+            font-size: 90%;
+        }
+
+        .h4{
+            margin-left: -6%;
+            margin-top: -4%;
+        }
+
+    	.site-footer__copyright--bottom{
+            width: 40%;
+            font-size: 100%;
+            margin-top: 10%;
+            margin-left: 70%;
+/*             margin-right: 30%; */
+            color: white !important;
+        }
+      	.site-footer__copyright-text a{
+            width: 40%;
+            font-size: 100%;
+               margin-top: 10%;
+            margin-left: 70%;
+/*             margin-right: 30%; */
+            color: white !important;
+        }
+
+
+
+       /*Trace more button*/       
+         .trace img {
+            width: 20%;
+            margin-left: 80%;
+            margin-top: -97%;
+            position: relative;
+         }
+
+        #trace_more1{
+            margin-top: -10%;
+            margin-left: 17%;            
+            margin-bottom: 3%;
+        }
+
+        #trace_more{
+            width: 85%;
+        }
