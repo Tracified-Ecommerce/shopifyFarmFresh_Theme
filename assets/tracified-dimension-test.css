@@ -1,0 +1,83 @@
+.dimensionBox {
+  width: 100%;
+  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+}
+
+.twoToneDiv {
+  background-color: #F44336;
+  height: auto;
+  width: 100%;
+  float: left;
+  border-left: 1px solid;
+  border-right: 1px solid;
+  border-bottom: none;
+}
+
+.leftBlack {
+  background-color: black;
+  height: 30px;
+  width: auto;
+  justify-content: center;
+  align-items: center;
+  border-bottom-right-radius: 25% 100%;
+  float: left;
+  padding-right: 22px;
+  padding-left: 5px;
+}
+
+.rightRed {
+  background-color: #F44336;
+  height: 30px !important;
+  width: auto;
+  float: right;
+  padding-left: 5px
+}
+
+.outerCell {
+  display: table-cell;
+  height: 30px;
+  width: 100%
+}
+
+.whiteText {
+  display: inline-block;
+  color: white;
+  padding-top: 5px;
+}
+
+.bottomBody {
+  border: 1px solid;
+  background-color: white;
+  float: left;
+  width: 100%;
+  height: auto
+}
+
+.blackText {}
+
+.box {
+  margin: 5px;
+  background-color: #FFE1E2;
+  width: 96%;
+  float: left;
+  height: auto;
+}
+
+.imageDiv {
+  height: auto;
+  width: auto;
+  display: flex;
+  flex-direction: row;
+  justify-content: left;
+  align-items: center;
+}
+
+.image {
+  height: 50px;
+  width: 50px;
+  margin: 5px;
+  background-color: #f44336;
+}
+
+.imageText {
+}

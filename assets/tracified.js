@@ -233,7 +233,6 @@ $(document).ready(function () {
         console.log(data.mapComponents.mapTabData[0].markers.length);
             let map = L.map(x.mapID, {
                 attributionControl: false,
-//                 center: [7.8742, 80.6511],
               center:[avgLat,avgLong],
                 minZoom: 2,
                 zoom: 7,
@@ -247,7 +246,7 @@ $(document).ready(function () {
                 iconUrl: "https://use.fontawesome.com/releases/v5.0.10/svgs/solid/map-marker-alt.svg",
                 iconRetinaUrl: "https://use.fontawesome.com/releases/v5.0.10/svgs/solid/map-marker-alt.svg",
                 iconSize: [25, 41],
-                iconAnchor: [12, 41],
+                iconAnchor: [12.5, 41],
                 popupAnchor: [0, -14]
             })
              
